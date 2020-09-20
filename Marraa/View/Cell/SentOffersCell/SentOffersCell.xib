@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentOffersCell" rowHeight="100" id="KGk-i7-Jjw" customClass="SentOffersCell" customModule="Marraa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="HLh-WH-Qc7">
+                        <rect key="frame" x="212" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="cXs-AM-x1A"/>
+                            <constraint firstAttribute="height" constant="100" id="rp6-D3-kK7"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L1S-he-ysW">
+                        <rect key="frame" x="0.0" y="23" width="207" height="54.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5t-J1-tin">
+                                <rect key="frame" x="0.0" y="0.0" width="207" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mi-aL-VTP">
+                                <rect key="frame" x="0.0" y="32" width="207" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HLh-WH-Qc7" secondAttribute="trailing" constant="8" id="4IE-ae-e6y"/>
+                    <constraint firstItem="L1S-he-ysW" firstAttribute="centerY" secondItem="HLh-WH-Qc7" secondAttribute="centerY" id="BPD-c4-uQz"/>
+                    <constraint firstItem="L1S-he-ysW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HoX-cd-SZ0"/>
+                    <constraint firstAttribute="bottom" secondItem="HLh-WH-Qc7" secondAttribute="bottom" id="W5A-4g-8Dd"/>
+                    <constraint firstItem="HLh-WH-Qc7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YYI-tl-IVy"/>
+                    <constraint firstItem="HLh-WH-Qc7" firstAttribute="leading" secondItem="L1S-he-ysW" secondAttribute="trailing" constant="5" id="nFA-su-NP3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="HLh-WH-Qc7" id="6b3-UR-a7D"/>
+                <outlet property="title" destination="t5t-J1-tin" id="TIm-u3-6Ot"/>
+                <outlet property="userName" destination="8mi-aL-VTP" id="5Zy-qv-bOe"/>
+            </connections>
+            <point key="canvasLocation" x="102" y="65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="13" height="17"/>
+    </resources>
+</document>

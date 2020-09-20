@@ -1,0 +1,6 @@
+module Cosmos {
+  umbrella header "Cosmos-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

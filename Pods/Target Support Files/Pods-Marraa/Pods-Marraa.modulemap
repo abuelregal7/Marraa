@@ -1,0 +1,6 @@
+framework module Pods_Marraa {
+  umbrella header "Pods-Marraa-umbrella.h"
+
+  export *
+  module * { export * }
+}
